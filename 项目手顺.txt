@@ -1,0 +1,11 @@
+2020/04/18
+laravel项目生成
+composer create-project --prefer-dist laravel/laravel blog "5.8.*" 
+
+
+在blogApp根目录下 创建github仓库   git init
+git add .
+git commit -m "laravel项目生成"
+
+
+
