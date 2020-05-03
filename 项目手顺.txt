@@ -6,6 +6,19 @@ composer create-project --prefer-dist laravel/laravel blog "5.8.*"
 在blogApp根目录下 创建github仓库   git init
 git add .
 git commit -m "laravel项目生成"
+git remote add origin http://.............
+git push -u origin master
 
+常用后台框架模板
+H-ui.admin
+ Amaze Ui
+ X-admin
+ 
+ 如果自己封装的类放在app目录下 use他，并且加载composer dump-autoload
 
-
+ 
+ 欺骗浏览器再次随机刷新页面
+  onclick="this.src='{{ url('admin/code') }}?'+Math.random() "
+  
+  --第三放插件验证码
+  composer require gregwar/captcha
