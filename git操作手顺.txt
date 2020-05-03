@@ -1,0 +1,50 @@
+git init  環境作成
+
+git status ステータスを確認
+
+git add . すべての資料追加
+
+git commit -m "備考"
+
+创建一个origin别名的 远程仓库
+git remote add origin https://github.com/chen398061105/gittest.git
+
+链接到该该别名的远程仓库 -u master 自动关联到master分支
+git push -u origin master
+
+对文件操作后 要重新上传到git
+步骤下
+git add . 
+
+git commit -m "備考"
+
+git push  origin master
+
+
+----生成公钥匙
+$ ssh-keygen -t rsa -C "chen398061105"
+id_rsa.pub
+
+然后复制去github官网设定setting 的SSH an GPS ksys设定 追加所需要的项目的key，这样下次就不必每次需要密码
+
+在该项目的setting里面的Manage access 可以添加其他github账户 别人就可以操作你的项目了
+
+----版本倒退--
+通过查看log里面的commit地址值来返回
+git log   // gitlog --pretty=oneline 可以只显示一行
+
+git reset --hard e7c68885c7b97c 回复到该版本时候
+
+git reflog 所有操作日志
+
+--查看分支-- 分支其实就是备份管理
+git branch 查看分支
+git branch dev 创建dev分支
+git checkout dev 切换到dev分支
+git checkout -b dev2 切换并创建dev2分支
+
+有时候git push 别名 分支名 失败 ，则需要先git pull 别名 分支名 然后再上传
+
+
+
+
